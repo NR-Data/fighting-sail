@@ -1,0 +1,293 @@
+{
+  "gameSystem": {
+    "name": "Fighting Sail",
+    "id": "c888-41c3-6663-8391",
+    "authorName": "DrCsernus",
+    "battleScribeVersion": 2.03,
+    "revision": 2,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [
+      {
+        "name": "Flagship",
+        "id": "d0d5-5588-4426-d9ab",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "da8f-23e4-4cb5-2c15",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "bfa6-dce4-de42-7320",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      },
+      {"name": "Frigates", "id": "e25d-2d12-cec3-e5af", "hidden": false},
+      {
+        "name": "Other Vessels",
+        "id": "44c7-b5ae-3378-200d",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "c5c5-22de-6258-290a",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": true,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 50
+          }
+        ]
+      },
+      {
+        "name": "Admiral",
+        "id": "ca3c-95e8-59ff-7cdc",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "983e-c69b-2051-7c48",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "2b17-d280-9f36-347e",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      },
+      {"name": "Ships-of-the-Line", "id": "22c2-376d-3705-c132", "hidden": false},
+      {"name": "Special Ordnance", "id": "f206-965d-d1eb-5f35", "hidden": false}
+    ],
+    "costTypes": [{"name": " Points", "id": "8798-8366-550b-fbb8", "defaultCostLimit": -1}],
+    "forceEntries": [
+      {
+        "name": "Fleet",
+        "id": "0f74-8453-bbef-18dd",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Admiral", "id": "56e1-0445-4617-0f48", "hidden": false, "primary": false, "targetId": "ca3c-95e8-59ff-7cdc"},
+          {"name": "Flagship", "id": "2b21-a18a-face-57aa", "hidden": false, "primary": false, "targetId": "d0d5-5588-4426-d9ab"},
+          {"name": "Ships-of-the-Line", "id": "c8d8-5ef0-ec5d-0a91", "hidden": false, "primary": false, "targetId": "22c2-376d-3705-c132"},
+          {"name": "Frigates", "id": "b182-10f1-f0df-9e83", "hidden": false, "primary": false, "targetId": "e25d-2d12-cec3-e5af"},
+          {"name": "Other Vessels", "id": "88cf-d88d-60f1-c71d", "hidden": false, "primary": false, "targetId": "44c7-b5ae-3378-200d"}
+        ]
+      },
+      {
+        "name": "Special Ordnance",
+        "id": "49ac-faf9-99dd-5512",
+        "hidden": false,
+        "categoryLinks": [{"name": "Special Ordnance", "id": "94da-e314-2646-9e00", "hidden": false, "primary": false, "targetId": "f206-965d-d1eb-5f35"}]
+      }
+    ],
+    "profileTypes": [
+      {
+        "name": "Ship",
+        "id": "ce5d-a89f-d8af-c646",
+        "characteristicTypes": [
+          {"name": "Sailing", "id": "01a9-fb9f-079b-b5a1"},
+          {"name": "Discipline", "id": "b0d2-cfef-48c9-0046"},
+          {"name": "Boarding", "id": "0e9c-98e6-9c8d-65d1"},
+          {"name": "Gunnery", "id": "b5f0-af08-9199-5f67"},
+          {"name": "Hull", "id": "6ae0-438a-301b-e203"}
+        ]
+      }
+    ],
+    "selectionEntries": [
+      {
+        "name": "Fireship",
+        "id": "03a5-4156-5ddc-86b5",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "91ec-47fa-b8eb-bb53", "hidden": false, "primary": true, "targetId": "f206-965d-d1eb-5f35"}],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 14}],
+        "profiles": [
+          {
+            "name": "Fireship",
+            "id": "f46c-edc1-1f38-472d",
+            "hidden": false,
+            "typeId": "ce5d-a89f-d8af-c646",
+            "typeName": "Ship",
+            "characteristics": [
+              {"name": "Sailing", "$text": "4", "typeId": "01a9-fb9f-079b-b5a1"},
+              {"name": "Discipline", "$text": "4", "typeId": "b0d2-cfef-48c9-0046"},
+              {"name": "Boarding", "$text": "0", "typeId": "0e9c-98e6-9c8d-65d1"},
+              {"name": "Gunnery", "$text": "0", "typeId": "b5f0-af08-9199-5f67"},
+              {"name": "Hull", "$text": "1", "typeId": "6ae0-438a-301b-e203"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Fireship",
+            "id": "1461-5097-e8f3-d19a",
+            "description": "While a fireship has one or more Damage tokens, it is considered to be \"set alight\". The crew may attempt to intentionally set it alight by passing a Discipline test during its sailing phase. If it passes, give the fireship a damage token.\nOnce it is set alight, a fireship can no longer make turns, and must move 4\" straight ahead during its player's sailing phase. Is a fireship has an Anchor token, it moves 2\" in the direction of the wind during it's player's sailing phase.\nAt the start of each turn, roll a die for each fireship that is alight. On a 4+, it receives an additional Damage token. If a fireship ever has four or more Damage tokens, it explodes and is removed from play. When a fireship explodes, each ship within 6\" of it receives a Damage token.\nWhenever a burning fireship ends its move within 2\" of another ship, that ship must roll a Discipline test. If it fails, it gets a Damage token.\nIf a burning fireship collides with another ship, the fireship cannot attempt to avoid the collision since it has no crew aboard to do so. The other ship may attempt to avoid as normal - if it succeeds, it must then test as above for coming within 2\" of the fireship. If it fails to avoid the collision, it receives a Damage token and will receive a further Damage token at the start of each subsequent turn it remains entangled with the fireship.\nIf a burning fireship runs aground, it explodes immediately.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Shore Batteries",
+        "id": "81ae-2eea-cbba-ae06",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "f0dd-00aa-bc68-b308", "hidden": false, "primary": true, "targetId": "f206-965d-d1eb-5f35"}],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 0}],
+        "rules": [
+          {
+            "name": "Shore Batteries",
+            "id": "e581-8cf9-0a00-08c8",
+            "description": "Shore batteries use the same procedure for shooting as ships. Because of their stable firing platform, the always hit on a 4+ and cause explosions on 6s. They always treat their targets as if they have a raking shot. Their maximum range is 24\". Finally, batteries can combine fire just like frigates, using the same rules.\nBatteries take damage just like ships do. Simply substitute \"sunk\" with \"destroyed\" and ignore Anchor tokens. This means that doing 1 or 2 damage to the shore fort will have no effect - stone is much harder to damage than wood!",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Shore Battery",
+            "id": "df5a-7afe-ff50-4507",
+            "collective": false,
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "name": "Small",
+                "id": "c40b-b300-4b5c-4050",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 23}],
+                "profiles": [
+                  {
+                    "name": "Small",
+                    "id": "9a4f-2807-955a-78ef",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "0", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "4", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "0", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "2", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "2", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Medium",
+                "id": "d953-35de-b3ae-5fd6",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 38}],
+                "profiles": [
+                  {
+                    "name": "Medium",
+                    "id": "a388-fc86-a585-53d6",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "0", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "4", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "0", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "4", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "4", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Large",
+                "id": "1cef-e2c3-dbc1-b27c",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 67}],
+                "profiles": [
+                  {
+                    "name": "Large",
+                    "id": "3e60-88c4-2597-1d3e",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "0", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "5", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "0", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "6", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "6", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bomb Vessel",
+        "id": "8f97-a3a2-0d3b-652e",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "8a63-7b15-ee62-a0ed", "hidden": false, "primary": true, "targetId": "f206-965d-d1eb-5f35"}],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 13}],
+        "profiles": [
+          {
+            "name": "Bomb Vessel",
+            "id": "465f-fb37-d772-0a49",
+            "hidden": false,
+            "typeId": "ce5d-a89f-d8af-c646",
+            "typeName": "Ship",
+            "characteristics": [
+              {"name": "Sailing", "$text": "4", "typeId": "01a9-fb9f-079b-b5a1"},
+              {"name": "Discipline", "$text": "4", "typeId": "b0d2-cfef-48c9-0046"},
+              {"name": "Boarding", "$text": "2", "typeId": "0e9c-98e6-9c8d-65d1"},
+              {"name": "Gunnery", "$text": "1", "typeId": "b5f0-af08-9199-5f67"},
+              {"name": "Hull", "$text": "1", "typeId": "6ae0-438a-301b-e203"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Bomb Vessel",
+            "id": "14b8-d9d1-5afa-1246",
+            "description": "Bomb vessels can only fire once per phase, and only while they have an Anchor token, but has a 360° arc of fire and may target any ship in range. These vessels cannot fire at short range, due to the high trajectory of their weapons - they may only choose targets at medium or long range. Furthermore, they always fire as if they have a raking shot, regardless of their position relative to their target.",
+            "hidden": false
+          }
+        ]
+      }
+    ]
+  }
+}

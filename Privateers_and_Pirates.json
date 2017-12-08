@@ -1,0 +1,445 @@
+{
+  "catalogue": {
+    "name": "Privateers and Pirates",
+    "id": "9f60-265c-0843-bf4d",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "c888-41c3-6663-8391",
+    "gameSystemRevision": 1,
+    "revision": 2,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "selectionEntries": [
+      {
+        "name": "Sea Dog",
+        "id": "5638-f4b1-989e-fef6",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "7aa6-1833-2b36-cf6d", "hidden": false, "primary": true, "targetId": "ca3c-95e8-59ff-7cdc"}],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 8}],
+        "rules": [
+          {
+            "name": "Sea Dog",
+            "id": "02f3-afc0-d019-6da3",
+            "description": "This admiral has plied the seven seas his entire life, and has perfected the art of capturing ships. Whenever one of your ships without Damage tokens collides with an enemy ship, it may take a Sailing test. If it passes, the enemy ship may not try to avoid the collision.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Buccaneer",
+        "id": "ed78-ed70-b96b-acec",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "0791-459f-8dd7-a41d", "hidden": false, "primary": true, "targetId": "ca3c-95e8-59ff-7cdc"}],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 13}],
+        "rules": [
+          {
+            "name": "Buccaneer",
+            "id": "2d0a-7720-ff6f-ddaa",
+            "description": "This admiral keeps his ships packed with extra crew, in order to overwhelm enemy ships and quickly press them into service. Whenever one of your ships wins a boarding action, you may add the newly captured ship to your fleet. The captured ship gets a Damage token is it didn't already have one, and can never lose its last Damage token.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Villain",
+        "id": "e335-45c9-e7f5-db37",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "6706-0516-83d4-dade", "hidden": false, "primary": true, "targetId": "ca3c-95e8-59ff-7cdc"}],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 6}],
+        "rules": [
+          {
+            "name": "Villain",
+            "id": "5e80-2265-940d-a147",
+            "description": "This admiral strikes fear in the hearts of friend and foe alike. Friendly ships within 12\" of your flagship get +1 Discipline. Enemy ships must pass a Discipline test before attacking your flagship in a boarding action. If they fail, they cannot continue with the boarding action.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Brig",
+        "id": "ae34-abfb-2820-fdec",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "e9fa-f4b5-c7de-4675", "hidden": false, "primary": true, "targetId": "44c7-b5ae-3378-200d"}],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 13}],
+        "entryLinks": [{"name": "Captain", "id": "cb67-d23a-3f71-499d", "hidden": false, "targetId": "595f-2ba8-9806-36f5", "type": "selectionEntryGroup"}],
+        "profiles": [
+          {
+            "name": "Brig",
+            "id": "8318-41a0-f2f5-33a5",
+            "hidden": false,
+            "typeId": "ce5d-a89f-d8af-c646",
+            "typeName": "Ship",
+            "characteristics": [
+              {"name": "Sailing", "$text": "7", "typeId": "01a9-fb9f-079b-b5a1"},
+              {"name": "Discipline", "$text": "4", "typeId": "b0d2-cfef-48c9-0046"},
+              {"name": "Boarding", "$text": "1", "typeId": "0e9c-98e6-9c8d-65d1"},
+              {"name": "Gunnery", "$text": "1", "typeId": "b5f0-af08-9199-5f67"},
+              {"name": "Hull", "$text": "1", "typeId": "6ae0-438a-301b-e203"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Brig",
+            "id": "36a5-1b65-9138-0afb",
+            "description": "Fire Support: These small ships can always combine fire with your other ships, regardless of squadron.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Jean Lafitte",
+        "id": "6dd0-8c88-c7ed-4a6f",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "2917-9ccd-bfca-09b0", "hidden": false, "primary": true, "targetId": "ca3c-95e8-59ff-7cdc"}],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 16}],
+        "rules": [
+          {
+            "name": "Jean Lafitte",
+            "id": "c4f1-cf1b-1237-e26d",
+            "description": "Scallywag: Your ships may re-roll 2s when rolling their Boarding dice (note that when combined with a Swashbuckler captain, this makes for a fearsome boarding crew!).\nExpert Raider: Whenever one of the ships in your flagship's squadron collides with an enemy ship, the enemy ship may not try to avoid the collision.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Squadron",
+        "id": "8807-bfb7-27e5-28ab",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "71ab-a18d-c65a-37b6", "hidden": false, "primary": true, "targetId": "e25d-2d12-cec3-e5af"}],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Ships",
+            "id": "97d0-76fc-7816-445d",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "eac8-77e9-ccaf-2c00",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "5th Rate",
+                "id": "011a-5c02-d7da-5f68",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "categoryLinks": [{"name": "New CategoryLink", "id": "0a11-5352-b66f-8289", "hidden": false, "primary": true, "targetId": "e25d-2d12-cec3-e5af"}],
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 34}],
+                "entryLinks": [{"name": "Captain", "id": "9594-d528-0b7e-a4ad", "hidden": false, "targetId": "595f-2ba8-9806-36f5", "type": "selectionEntryGroup"}],
+                "profiles": [
+                  {
+                    "name": "5th Rate",
+                    "id": "cea2-8d90-0b57-8438",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "7", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "5", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "5", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "4", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "3", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "6th Rate",
+                "id": "965a-abad-b722-bb4d",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "New CategoryLink", "id": "a3d0-081b-1f68-2c80", "hidden": false, "primary": true, "targetId": "e25d-2d12-cec3-e5af"}],
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 17}],
+                "entryLinks": [{"name": "Captain", "id": "81eb-e495-4d2d-ed92", "hidden": false, "targetId": "595f-2ba8-9806-36f5", "type": "selectionEntryGroup"}],
+                "profiles": [
+                  {
+                    "name": "6th Rate",
+                    "id": "eb00-d792-eaee-6e74",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "8", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "4", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "4", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "2", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "1", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Flagship's Squadron",
+        "id": "c028-ba7d-ac30-302c",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "b61f-62fb-a8ad-5297", "hidden": false, "primary": true, "targetId": "d0d5-5588-4426-d9ab"}],
+        "constraints": [
+          {
+            "id": "5315-a718-f90e-7b75",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "3194-a589-91df-717d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Flagship",
+            "id": "8c60-04f8-bc3c-6135",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "861c-3d01-4c82-0c97",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "7383-3723-4c43-0f18",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "5th Rate (Flagship)",
+                "id": "b8e1-1a12-dbb3-fe01",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 36}],
+                "entryLinks": [{"name": "Captain", "id": "0fd8-ca56-ec4d-cd71", "hidden": false, "targetId": "595f-2ba8-9806-36f5", "type": "selectionEntryGroup"}],
+                "profiles": [
+                  {
+                    "name": "5th Rate (Flagship)",
+                    "id": "584e-dc23-cb2a-eaac",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "7", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "7", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "5", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "4", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "3", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "6th Rate (Flagship)",
+                "id": "b64f-525a-74fe-6a4a",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 19}],
+                "entryLinks": [{"name": "Captain", "id": "d38e-d014-f4ff-e700", "hidden": false, "targetId": "595f-2ba8-9806-36f5", "type": "selectionEntryGroup"}],
+                "profiles": [
+                  {
+                    "name": "6th Rate (Flagship)",
+                    "id": "90c3-4bae-d8f8-59c8",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "8", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "6", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "4", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "2", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "1", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ships",
+            "id": "537e-a534-cefd-9c2a",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "07aa-0982-7ab6-2a3a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "5th Rate",
+                "id": "2a83-1968-70dc-ac75",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "categoryLinks": [{"name": "New CategoryLink", "id": "aef0-af85-d25a-e922", "hidden": false, "primary": true, "targetId": "e25d-2d12-cec3-e5af"}],
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 34}],
+                "entryLinks": [{"name": "Captain", "id": "1ff9-5561-1f8c-225b", "hidden": false, "targetId": "595f-2ba8-9806-36f5", "type": "selectionEntryGroup"}],
+                "profiles": [
+                  {
+                    "name": "5th Rate",
+                    "id": "9d68-ebeb-7f62-41d4",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "7", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "5", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "5", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "4", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "3", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "6th Rate",
+                "id": "5d8c-daef-8269-64fc",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "New CategoryLink", "id": "efde-591f-4e9d-42a6", "hidden": false, "primary": true, "targetId": "e25d-2d12-cec3-e5af"}],
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 17}],
+                "entryLinks": [{"name": "Captain", "id": "c9c8-231e-2741-31e1", "hidden": false, "targetId": "595f-2ba8-9806-36f5", "type": "selectionEntryGroup"}],
+                "profiles": [
+                  {
+                    "name": "6th Rate",
+                    "id": "fa23-873d-6b09-4a00",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "8", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "4", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "4", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "2", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "1", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Marksman",
+        "id": "a509-d13c-bc1f-097b",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 6}],
+        "rules": [{"name": "Marksman", "id": "212c-4ff3-8016-17ea", "description": "The ship may re-roll 1s when rolling its Gunnery dice.", "hidden": false}]
+      },
+      {
+        "name": "Swashbuckler",
+        "id": "438b-d1bc-dc3a-96d2",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 1}],
+        "rules": [{"name": "Swashbuckler", "id": "7662-d362-c6d3-9d23", "description": "The ship may re-roll 1s when rolling its Boarding dice.", "hidden": false}]
+      },
+      {
+        "name": "Navigator",
+        "id": "6958-cb17-a438-c9c5",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 2}],
+        "rules": [{"name": "Navigator", "id": "6016-6543-4490-2666", "description": "The ship may re-roll 1s when rolling its Sailing dice.", "hidden": false}]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Captain",
+        "id": "595f-2ba8-9806-36f5",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "3a31-588d-b68b-0be9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {"name": "Marksman", "id": "72ac-d5ff-2ff3-1ed8", "hidden": false, "targetId": "a509-d13c-bc1f-097b", "type": "selectionEntry"},
+          {"name": "Navigator", "id": "fa2f-57c6-d6a8-ed8c", "hidden": false, "targetId": "6958-cb17-a438-c9c5", "type": "selectionEntry"},
+          {"name": "Swashbuckler", "id": "2cd1-e60d-1e8f-1c80", "hidden": false, "targetId": "438b-d1bc-dc3a-96d2", "type": "selectionEntry"}
+        ]
+      }
+    ]
+  }
+}

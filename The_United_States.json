@@ -1,0 +1,652 @@
+{
+  "catalogue": {
+    "name": "The United States",
+    "id": "6c63-4a5d-1815-c8ee",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "c888-41c3-6663-8391",
+    "gameSystemRevision": 1,
+    "revision": 2,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "selectionEntries": [
+      {
+        "name": "Daring",
+        "id": "0d6b-e1b9-8685-9da1",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "85cb-169e-572b-a09f", "hidden": false, "primary": true, "targetId": "ca3c-95e8-59ff-7cdc"}],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 4}],
+        "rules": [
+          {
+            "name": "Daring",
+            "id": "d42b-53f2-9a1e-3dda",
+            "description": "The American captains didn't have huge ships, so they had to rely on bravado and skill to help them best their foes. When the initiative roll is tied, your fleet gets the initiative. If both admirals have this ability, then determine who gets initiative as per the normal rules.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Hero",
+        "id": "0d07-760d-b0c0-4feb",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "663e-0989-4141-dcca", "hidden": false, "primary": true, "targetId": "ca3c-95e8-59ff-7cdc"}],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 6}],
+        "rules": [
+          {
+            "name": "Hero",
+            "id": "4c76-9a11-9959-c3c2",
+            "description": "This admiral inspires his crews to fight for their fledging country. Your fleet gets a +10% fleet morale bonus.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Former Frigate Captain",
+        "id": "78e6-2e86-222e-fe6e",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "db03-09cd-f4d9-5b7e", "hidden": false, "primary": true, "targetId": "ca3c-95e8-59ff-7cdc"}],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 9}],
+        "rules": [
+          {
+            "name": "Former Frigate Captain",
+            "id": "5b5e-e3b3-44c8-4cd6",
+            "description": "Squadron tactics were key to the US naval strategy, something this admiral knows well. He trains his fleet to work as a single, cohesive whole. When your squadrons combine fire, use the closest squadron member when working out range.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Brig",
+        "id": "664f-479c-4ca7-712b",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "5933-e687-2f12-155c", "hidden": false, "primary": true, "targetId": "44c7-b5ae-3378-200d"}],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 13}],
+        "entryLinks": [{"name": "Captain", "id": "6fa8-3f72-a5ad-97c7", "hidden": false, "targetId": "75c6-1566-511b-b141", "type": "selectionEntryGroup"}],
+        "profiles": [
+          {
+            "name": "Brig",
+            "id": "9dca-8e0f-e0d1-d634",
+            "hidden": false,
+            "typeId": "ce5d-a89f-d8af-c646",
+            "typeName": "Ship",
+            "characteristics": [
+              {"name": "Sailing", "$text": "7", "typeId": "01a9-fb9f-079b-b5a1"},
+              {"name": "Discipline", "$text": "4", "typeId": "b0d2-cfef-48c9-0046"},
+              {"name": "Boarding", "$text": "1", "typeId": "0e9c-98e6-9c8d-65d1"},
+              {"name": "Gunnery", "$text": "1", "typeId": "b5f0-af08-9199-5f67"},
+              {"name": "Hull", "$text": "1", "typeId": "6ae0-438a-301b-e203"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Brig",
+            "id": "d538-b742-f54c-a4dd",
+            "description": "Fire Support: These small ships can always combine fire with your other ships, regardless of squadron.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Squadron",
+        "id": "9e67-94ac-b346-3282",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "58f5-56d5-3810-725a", "hidden": false, "primary": true, "targetId": "e25d-2d12-cec3-e5af"}],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Ships",
+            "id": "d5f4-5a40-cad1-016d",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "8031-5757-e670-e3f5",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "8031-5757-e670-e3f5",
+                "type": "set",
+                "value": 4,
+                "conditions": [
+                  {
+                    "childId": "2f65-ff0b-4e1f-7468",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "5th Rate",
+                "id": "5652-20a3-006e-53fe",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "categoryLinks": [{"name": "New CategoryLink", "id": "faea-9130-e41f-1209", "hidden": false, "primary": true, "targetId": "e25d-2d12-cec3-e5af"}],
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 29}],
+                "entryLinks": [{"name": "Captain", "id": "a92d-be93-6c2d-9cd0", "hidden": false, "targetId": "75c6-1566-511b-b141", "type": "selectionEntryGroup"}],
+                "profiles": [
+                  {
+                    "name": "5th Rate",
+                    "id": "5eae-d4f5-48ba-ecf1",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "6", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "6", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "4", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "5", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "3", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "6th Rate",
+                "id": "2217-a1ae-b7de-3370",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "categoryLinks": [{"name": "New CategoryLink", "id": "14e5-44a6-7acf-16c7", "hidden": false, "primary": true, "targetId": "e25d-2d12-cec3-e5af"}],
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 16}],
+                "entryLinks": [{"name": "Captain", "id": "8224-bc23-bcec-93be", "hidden": false, "targetId": "75c6-1566-511b-b141", "type": "selectionEntryGroup"}],
+                "profiles": [
+                  {
+                    "name": "6th Rate",
+                    "id": "b6d8-9cc7-6bba-9c1f",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "7", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "5", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "3", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "3", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "1", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "USS United States",
+                "id": "1194-aba3-53b1-6536",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "categoryLinks": [{"name": "New CategoryLink", "id": "c004-6773-4b22-a742", "hidden": false, "primary": true, "targetId": "e25d-2d12-cec3-e5af"}],
+                "constraints": [
+                  {
+                    "id": "efd7-adb2-b644-1b65",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 43}],
+                "entryLinks": [{"name": "Captain", "id": "2561-7c57-f605-4432", "hidden": false, "targetId": "75c6-1566-511b-b141", "type": "selectionEntryGroup"}],
+                "profiles": [
+                  {
+                    "name": "USS United States",
+                    "id": "b180-0737-55f9-fe17",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "6", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "6", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "4", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "5", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "5", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Flagship's Squadron",
+        "id": "2853-299d-9ce2-832f",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "8b86-f9c2-2d35-22ec", "hidden": false, "primary": true, "targetId": "d0d5-5588-4426-d9ab"}],
+        "constraints": [
+          {
+            "id": "b731-3a17-70a7-001c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "7010-673d-3b53-7dca",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Flagship",
+            "id": "30df-68b5-4275-0572",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "d4bb-3f7b-319e-012f",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "4f9b-2991-cad1-2fff",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "5th Rate (Flagship)",
+                "id": "ca9d-4d69-7f12-3bd2",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 33}],
+                "entryLinks": [{"name": "Captain", "id": "264a-e7ab-1265-cfc8", "hidden": false, "targetId": "75c6-1566-511b-b141", "type": "selectionEntryGroup"}],
+                "profiles": [
+                  {
+                    "name": "5th Rate (Flagship)",
+                    "id": "82f7-1aab-9f47-0a08",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "6", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "8", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "4", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "5", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "3", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "6th Rate (Flagship)",
+                "id": "2686-2d01-afc6-2b67",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 18}],
+                "entryLinks": [{"name": "Captain", "id": "c5ce-de77-773d-9e8c", "hidden": false, "targetId": "75c6-1566-511b-b141", "type": "selectionEntryGroup"}],
+                "profiles": [
+                  {
+                    "name": "6th Rate (Flagship)",
+                    "id": "96f8-784b-38e5-1d99",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "7", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "7", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "3", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "3", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "1", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "USS Constitution",
+                "id": "3b6c-3748-5eac-5224",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "constraints": [
+                  {
+                    "id": "240c-9529-89b7-36fe",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 64}],
+                "entryLinks": [{"name": "Captain", "id": "1b00-d3a4-b977-c641", "hidden": false, "targetId": "75c6-1566-511b-b141", "type": "selectionEntryGroup"}],
+                "profiles": [
+                  {
+                    "name": "USS Constitution",
+                    "id": "17e9-664a-c311-7e43",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "6", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "6", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "4", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "5", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "5", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "USS Constitution",
+                    "id": "5b85-1479-382a-e108",
+                    "description": "Old Ironsides: This ship may re-roll 1s when rolling Hull dice.\nInspiring: You get a +10% fleet morale bonus.",
+                    "hidden": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ships",
+            "id": "bf7a-dd60-8256-d04c",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "a11c-44f0-3f54-8b7d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "a11c-44f0-3f54-8b7d",
+                "type": "set",
+                "value": 3,
+                "conditions": [
+                  {
+                    "childId": "2f65-ff0b-4e1f-7468",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "5th Rate",
+                "id": "0731-f655-2bc1-257b",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "categoryLinks": [{"name": "New CategoryLink", "id": "a4ea-e70d-52fd-75b9", "hidden": false, "primary": true, "targetId": "e25d-2d12-cec3-e5af"}],
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 29}],
+                "entryLinks": [{"name": "Captain", "id": "aae7-2790-8c70-3d0c", "hidden": false, "targetId": "75c6-1566-511b-b141", "type": "selectionEntryGroup"}],
+                "profiles": [
+                  {
+                    "name": "5th Rate",
+                    "id": "60e8-bd68-6be2-504c",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "6", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "6", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "4", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "5", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "3", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "6th Rate",
+                "id": "799f-1396-3002-175a",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "categoryLinks": [{"name": "New CategoryLink", "id": "6c03-20b5-2f3d-c021", "hidden": false, "primary": true, "targetId": "e25d-2d12-cec3-e5af"}],
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 16}],
+                "entryLinks": [{"name": "Captain", "id": "d095-89b3-c058-a3aa", "hidden": false, "targetId": "75c6-1566-511b-b141", "type": "selectionEntryGroup"}],
+                "profiles": [
+                  {
+                    "name": "6th Rate",
+                    "id": "0e05-1445-0f8f-fcde",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "7", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "5", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "3", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "3", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "1", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "USS United States",
+                "id": "71df-ceb8-de60-dbfc",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "categoryLinks": [{"name": "New CategoryLink", "id": "8e48-1424-34d4-aa1e", "hidden": false, "primary": true, "targetId": "e25d-2d12-cec3-e5af"}],
+                "constraints": [
+                  {
+                    "id": "a53c-b033-266f-7c72",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 43}],
+                "entryLinks": [{"name": "Captain", "id": "a7a3-0c70-e122-d807", "hidden": false, "targetId": "75c6-1566-511b-b141", "type": "selectionEntryGroup"}],
+                "profiles": [
+                  {
+                    "name": "USS United States",
+                    "id": "129c-dcec-f585-34b7",
+                    "hidden": false,
+                    "typeId": "ce5d-a89f-d8af-c646",
+                    "typeName": "Ship",
+                    "characteristics": [
+                      {"name": "Sailing", "$text": "6", "typeId": "01a9-fb9f-079b-b5a1"},
+                      {"name": "Discipline", "$text": "6", "typeId": "b0d2-cfef-48c9-0046"},
+                      {"name": "Boarding", "$text": "4", "typeId": "0e9c-98e6-9c8d-65d1"},
+                      {"name": "Gunnery", "$text": "5", "typeId": "b5f0-af08-9199-5f67"},
+                      {"name": "Hull", "$text": "5", "typeId": "6ae0-438a-301b-e203"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Marksman",
+        "id": "0511-78c8-4d0f-1931",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 0}],
+        "rules": [{"name": "Marksman", "id": "577e-4ca2-3d9a-5bc1", "description": "The ship may re-roll 1s when rolling its Gunnery dice.", "hidden": false}]
+      },
+      {
+        "name": "Navigator",
+        "id": "ce74-4c1a-a2d0-b4c6",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 2}],
+        "rules": [{"name": "Navigator", "id": "aa65-d866-366b-c725", "description": "The ship may re-roll 1s when rolling its Sailing dice.", "hidden": false}]
+      },
+      {
+        "name": "Authoritarian",
+        "id": "0007-7f02-b955-e5ee",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 3}],
+        "rules": [{"name": "Authoritarian", "id": "46c6-6352-b7ef-6e44", "description": "The ship may re-roll 1s when rolling its Discipline dice.", "hidden": false}]
+      },
+      {
+        "name": "John Paul Jones",
+        "id": "3e8c-0498-ea85-9e82",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "460e-a85d-83a9-da77",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 7}],
+        "rules": [
+          {
+            "name": "John Paul Jones",
+            "id": "1057-7e06-47b8-2932",
+            "description": "Swashbuckler: His ship may re-roll 1s when rolling its Boarding dice.\nMarksman: His ship may re-roll 1s when rolling its Gunnery dice.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Stephen Decatur",
+        "id": "2f65-ff0b-4e1f-7468",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "73e7-b708-2004-d6ac",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "8798-8366-550b-fbb8", "value": 12}],
+        "rules": [
+          {
+            "name": "Stephen Decatur",
+            "id": "a808-9121-86f0-1c6c",
+            "description": "Navigator: His ship may re-roll 1s when rolling its Sailing dice.\nNaval Acumen: Decatur's squadron may contain up to 4 vessels.",
+            "hidden": false
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Captain",
+        "id": "75c6-1566-511b-b141",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "b0b4-07f9-e353-cac3",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {"name": "Authoritarian", "id": "0cc3-0772-4881-f342", "hidden": false, "targetId": "0007-7f02-b955-e5ee", "type": "selectionEntry"},
+          {"name": "Marksman", "id": "7e9e-495c-70ea-4f7b", "hidden": false, "targetId": "0511-78c8-4d0f-1931", "type": "selectionEntry"},
+          {"name": "Navigator", "id": "44ad-0274-c8e4-869f", "hidden": false, "targetId": "ce74-4c1a-a2d0-b4c6", "type": "selectionEntry"},
+          {"name": "John Paul Jones", "id": "a124-565c-8310-3279", "hidden": false, "targetId": "3e8c-0498-ea85-9e82", "type": "selectionEntry"},
+          {"name": "Stephen Decatur", "id": "805c-5d43-c12d-3eee", "hidden": false, "targetId": "2f65-ff0b-4e1f-7468", "type": "selectionEntry"}
+        ]
+      }
+    ]
+  }
+}
